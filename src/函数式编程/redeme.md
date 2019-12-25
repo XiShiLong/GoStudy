@@ -3,7 +3,7 @@
 # 正统 函数式编程
 不可变性：不能有状态，只有常量和函数
 # 闭包
-`func adder() func(int)int{
+```func adder() func(int)int{
 	sum:=0
 	return func(v int)int {
 		sum+=v
@@ -16,6 +16,6 @@ func main(){
 	for i:=0;i<10;i++{
 		fmt.Printf("0+1+...+ %d = %d \n",i,a(i))
 	}
-}`
+}```
 adder()函数在return时不仅仅返回return后面的function，而是联合function和function涉及的function引用的变量sum形成一个闭包一起返回。
-(https://github.com/aaaGoodMan/GoStudy/src/函数式编程/bibao.png)
+![闭包](https://github.com/aaaGoodMan/GoStudy/src/函数式编程/bibao.png)
