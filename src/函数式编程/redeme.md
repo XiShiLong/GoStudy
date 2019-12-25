@@ -3,7 +3,8 @@
 # 正统 函数式编程
 不可变性：不能有状态，只有常量和函数
 # 闭包
-```func adder() func(int)int{
+```
+func adder() func(int)int{
 	sum:=0
 	return func(v int)int {
 		sum+=v
