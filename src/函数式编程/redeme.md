@@ -20,4 +20,3 @@ func main(){
 }
 ```
 adder()函数在return时不仅仅返回return后面的function，而是联合function和function涉及的function引用的变量sum形成一个闭包一起返回。
-![闭包](https://github.com/aaaGoodMan/GoStudy/src/函数式编程/bibao.png)
