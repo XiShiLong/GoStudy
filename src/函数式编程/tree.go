@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 type Node struct{
 	value int
@@ -59,15 +62,23 @@ func (node *Node) TraverseFunc(f func(node *Node)){
 
 
 func main() {
-	head:=MakeTree()
+	//head:=MakeTree()
 	//head.Traverse()
 
 	//数节点
-	count:=0
+	/*count:=0
 	head.TraverseFunc(func(node *Node){
 		count++
 	})
 
-	fmt.Printf("the count of node is : %d",count)
+	fmt.Printf("the count of node is : %d",count)*/
+	a:=map[string]interface{}{
+		"name":"xishilong",
+		"age":20,
+	}
+
+	c,ok:=a["name"].(string)
+	fmt.Println(c)
+	fmt.Println(reflect.TypeOf(ok))
 }
 
